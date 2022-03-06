@@ -218,12 +218,6 @@ SimpleEqAudioProcessor::createParameterLayout()
                                                           juce::NormalisableRange<float>(0.1f, 10.f, 0.05f, 1.f),
                                                           1.f
                                                           ));
-    layout.add(std::make_unique<juce::AudioParameterFloat>(
-                                                           "Peak Quality",
-                                                           "Peak Quality",
-                                                           juce::NormalisableRange<float>(0.1f, 10.f, 0.05f, 1.f),
-                                                           1.f
-                                                           ));
     juce::StringArray stringArray;
     for (int i = 0; i < 4; ++i) {
         juce::String str;
